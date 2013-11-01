@@ -13,6 +13,6 @@
 (def app
   (handler/site app-routes))
 
-(defn -main [& [port]]
-  (let [port (Integer. (or port 3000))]
+(defn -main []
+  (let [port (Integer. (or (System/getenv "PORT") 3000))]
     (j/run-jetty app {:port port})))

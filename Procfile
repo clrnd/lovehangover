@@ -1,1 +1,1 @@
-web: lein trampoline run -m lovehangover.web 80
+web: lein trampoline run -m lovehangover.web

@@ -29,3 +29,8 @@ j
 #llsd
 #inst "2013"
 (str #inst "2013")
+(or (System/getenv "port") 4)
+(System/getenv "port")
+(or "port" 4)
+(Integer. (or "port" 4))
+(Integer. (or "434" 4))
