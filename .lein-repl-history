@@ -1,0 +1,31 @@
+(use 'lovehangover.model)
+(db)
+db
+(j/query db  (s/select * :fruit "rosy"})) :row-fn :cost)
+(j)
+j
+(ns lovehangover.model
+  (:require [clojure.java.jdbc :as j]
+            [clojure.java.jdbc.sql :as s]))
+(def db {:classname "org.postgresql.Driver"
+         :subprotocol "postgresql"
+         :subname "//localhost:5432/lovehangover"
+         :user "postgres"
+         :password "chango"})
+j
+(j/query db  (s/select * uploads))
+(j/query db  (s/select * :uploads))
+(use 'clj-json)
+(use 'lovehangover.model)
+(all)
+(first (all))
+((first (all)) :created_on)
+:t ((first (all)) :created_on)
+((first (all)) :created_on)
+(help)
+((first (all)) :created_on)
+(symbol ((first (all)) :created_on))
+((first (all)) :created_on)
+#llsd
+#inst "2013"
+(str #inst "2013")
